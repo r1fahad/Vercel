@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=https://fflike.netlify.app" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Redirecting...</title>
+  <script>
+    const host = window.location.hostname;
+    let redirectUrl = 'https://fflike.netlify.app'; // default
+
+    if (host === 'r1like.vercel.app') {
+      redirectUrl = 'https://fflike.netlify.app';
+    } else if (host === 'rilike.vercel.app') {
+      redirectUrl = 'https://r1like-special.netlify.app';
+    } else if (host === 'ffmaxlike.vercel.app') {
+      redirectUrl = 'https://ffmax-main.netlify.app';
+    } else if (host === 'fastlike.vercel.app') {
+      redirectUrl = 'https://fastlike-page.netlify.app';
+    } else if (host === 'flashlike.vercel.app') {
+      redirectUrl = 'https://flashlike-page.netlify.app';
+    } else if (host === 'fflk.vercel.app') {
+      redirectUrl = 'https://fflk-page.netlify.app';
+    } else if (host === 'r1l.vercel.app') {
+      redirectUrl = 'https://r1l-main.netlify.app';
+    }
+
+    window.location.href = redirectUrl;
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="https://fflike.netlify.app">fflike.netlify.app</a>...</p>
+  <p>Redirecting... If not redirected, <a href="https://fflike.netlify.app">click here</a>.</p>
 </body>
 </html>
